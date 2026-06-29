@@ -1,6 +1,8 @@
 # orthogonality
 Pipeline to meta-analyze *E. coli* gene expression data--spanning various studies, bacterial strains, and laboratory environments--to identify genes associated with the bacterial response to different engineering conditions. 
 
+<img src="orthogonality.png" width="800">
+
 ## Dependencies
 
 ### Software Tools
