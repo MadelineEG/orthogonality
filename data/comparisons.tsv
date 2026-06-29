@@ -1,0 +1,3 @@
+study	comp_name	comp_abbrev	group	treat_condition	ctrl_condition
+guo	untrans_pB	GpB-T	T	trans_pB	untrans
+guo	untrans_pE	GpE-T	T	trans_pE	untrans

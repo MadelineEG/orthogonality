@@ -1,0 +1,11 @@
+# Data
+/data/clean
+/data/filtered
+/data/logs
+/data/raw
+
+# Output
+/output
+
+# References
+/references
