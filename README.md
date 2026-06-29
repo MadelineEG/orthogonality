@@ -1,5 +1,5 @@
 # orthogonality
-Pipeline to meta-analyze *E. coli* gene expression data---spanning various studies, bacterial strains, and laboratory environments---to identify genes associated with the bacterial response to different engineering conditions. 
+Pipeline to meta-analyze *E. coli* gene expression data-spanning various studies, bacterial strains, and laboratory environments-to identify genes associated with the bacterial response to different engineering conditions. 
 
 ## Dependencies
 
@@ -22,6 +22,7 @@ All relevant software tools and their dependencies are included in the Conda env
 * **SortMeRNA DB:** ./references/databases/smr_v4.3_default_db, downloadble via **./scripts/00_download_rrna-db.sh**
 
 ## Directory Structure
+```bash
 .
 ├── data    
 │   ├── accessions  
@@ -58,7 +59,8 @@ All relevant software tools and their dependencies are included in the Conda env
     ├── 04_quantify_counts.sh   
     ├── 05_process_counts.R 
     ├── 06_get_de-genes.R   
-    └── 07_remove_plasmid-genes.R   
+    └── 07_remove_plasmid-genes.R  
+``` 
 
 ## Metadata and DE Comparisons
 Ensure you have populated **./data/metadata.tsv** with accession numbers for raw data, corresponding bacterial strain and plasmid (if applicable), data layout (paired vs. unpaired) and strandedness parameters, and a condition name to group together biological replicates
