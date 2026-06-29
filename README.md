@@ -1,5 +1,5 @@
 # orthogonality
-Pipeline to meta-analyze *E. coli* gene expression data--spanning various studies, bacterial strains, and laboratory environments--to identify genes associated with the bacterial response to different engineering conditions. 
+Pipeline to meta-analyze *E. coli* gene expression data---spanning various studies, bacterial strains, and laboratory environments---to identify genes associated with the bacterial response to different engineering conditions. 
 
 ## Dependencies
 
@@ -17,48 +17,48 @@ All relevant software tools and their dependencies are included in the Conda env
 * bioconductor-deseq2: 1.50.2
 
 ### Raw Data, References, and Databases
-* **Data:** NCBI accessions are listed in ./data/metadata.tsv and can be downloaded via ./scripts/00_download_raw_data.sh
-* **References:** NCBI accessions are listed in ./references/genomes.tsv and can be downloaded via ./scripts/00_download_refs.sh
-* **SortMeRNA DB:** ./references/databases/smr_v4.3_default_db, downloadble via ./scripts/00_download_rrna-db.sh
+* **Data:** NCBI accessions are listed in ./data/metadata.tsv and can be downloaded via **./scripts/00_download_raw_data.sh**
+* **References:** NCBI accessions are listed in ./references/genomes.tsv and can be downloaded via **./scripts/00_download_refs.sh**
+* **SortMeRNA DB:** ./references/databases/smr_v4.3_default_db, downloadble via **./scripts/00_download_rrna-db.sh**
 
 ## Directory Structure
 .
-├── data
-│   ├── accessions
-│   ├── clean
-│   ├── comparisons.tsv
-│   ├── filtered
-│   ├── logs
-│   │   ├── multiqc_data
-│   │   └── multiqc_report.html
-│   ├── metadata.tsv
-│   ├── qc_summary.tsv
-│   └── raw
-├── output
-│   ├── alignments
-│   ├── counts
-│   ├── counts-processed
-│   └── de-genes
-├── pipeline.slurm
-├── README.md
-├── references
-│   ├── databases
-│   ├── genomes
-│   ├── genomes.tsv
-│   ├── gffs
-│   ├── hisat2_indexes
-│   └── plasmids
-└── scripts
-    ├── 00_download_raw_data.sh
-    ├── 00_download_refs.sh
-    ├── 00_download_rrna-db.sh
-    ├── 01_clean_raw_data.sh
-    ├── 02_remove_rrna.sh
-    ├── 03_align_reads.sh
-    ├── 04_quantify_counts.sh
-    ├── 05_process_counts.R
-    ├── 06_get_de-genes.R
-    └── 07_remove_plasmid-genes.R
+├── data    
+│   ├── accessions  
+│   ├── clean   
+│   ├── comparisons.tsv 
+│   ├── filtered    
+│   ├── logs    
+│   │   ├── multiqc_data    
+│   │   └── multiqc_report.html 
+│   ├── metadata.tsv    
+│   ├── qc_summary.tsv  
+│   └── raw 
+├── output  
+│   ├── alignments  
+│   ├── counts  
+│   ├── counts-processed    
+│   └── de-genes    
+├── pipeline.slurm  
+├── README.md   
+├── references  
+│   ├── databases   
+│   ├── genomes 
+│   ├── genomes.tsv 
+│   ├── gffs    
+│   ├── hisat2_indexes  
+│   └── plasmids    
+└── scripts 
+    ├── 00_download_raw_data.sh 
+    ├── 00_download_refs.sh 
+    ├── 00_download_rrna-db.sh  
+    ├── 01_clean_raw_data.sh    
+    ├── 02_remove_rrna.sh   
+    ├── 03_align_reads.sh   
+    ├── 04_quantify_counts.sh   
+    ├── 05_process_counts.R 
+    ├── 06_get_de-genes.R   
+    └── 07_remove_plasmid-genes.R   
 
 ## Metadata and DE Comparisons
 Ensure you have populated **./data/metadata.tsv** with accession numbers for raw data, corresponding bacterial strain and plasmid (if applicable), data layout (paired vs. unpaired) and strandedness parameters, and a condition name to group together biological replicates
