@@ -104,19 +104,33 @@ sbatch pipeline.slurm
 
 ## Overview
 1. Clean raw data and generate quality reports with **trim galore!**, **fastqc**, and **multiqc**. 
+
     Clean data go to ./data/clean, fastqc and mulitqc reports go to ./data/logs and ./data/logs/multiqc_data. Metadata on the number of clean reads per file populates in ./data/qc_summary.tsv
+
 2. Remove rRNA with **SortMeRNA** vs. **smr_v4.3_default_db** database
+
     rRNA-filtered data go to ./data/filtered. Metadata on the number of non-rRNA reads per file populates in ./data/qc_summary.tsv
+
 3. Align reads vs corresponding reference .fna/.fasta (with plasmid appended as necessary) with **hisat2** and **samtools**
+
     Alignment .bam files and summary .txt files go to ./output/alignemnts. Hisat2 indexes go to ./references/hisat2_indexes.
+
 4. Quantify counts with **htseq-count** vs ref .gff (wtih plasmid appended as necessary)
+
     Counts .txt files go to ./output/counts
+
 5. Process counts in R: sum technical replicates
+
     Processed counts go to ./output/counts-processed
+    
     **Note that need to clarify and add this**
+
 6. Perform differential gene expression analysis with **DESeq2**
+    
     DE gene lists (padj<0.05) go to ./output/de-genes in .csv format
+    
 7. Remove plasmid genes
+    
     **Note that need to clarify and add this**
 
 ## Outputs
