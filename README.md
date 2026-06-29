@@ -50,9 +50,9 @@ All relevant software tools and their dependencies are included in the Conda env
 │   ├── hisat2_indexes  
 │   └── plasmids    
 └── scripts 
-    ├── 00_download_raw_data.sh 
-    ├── 00_download_refs.sh 
-    ├── 00_download_rrna-db.sh  
+    ├── 00_download_raw_data.slurm
+    ├── 00_download_refs.slurm
+    ├── 00_download_rrna-db.slurm  
     ├── 01_clean_raw_data.sh    
     ├── 02_remove_rrna.sh   
     ├── 03_align_reads.sh   
