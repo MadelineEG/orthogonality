@@ -119,7 +119,6 @@ sbatch pipeline.slurm
 7. Remove plasmid genes
     **Note that need to clarify and add this**
 
-
 ## Outputs
 **DE gene lists** containing lists of significantly DE genes (padj<0.05) in .csv format can be found in ./output/de-genes
 
