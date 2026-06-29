@@ -1,0 +1,8 @@
+name: htseq-env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - htseq
+  - python=3.11

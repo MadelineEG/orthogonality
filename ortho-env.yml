@@ -1,0 +1,14 @@
+name: ortho-env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - sra-tools
+  - ncbi-datasets-cli
+  - trim-galore
+  - multiqc
+  - hisat2
+  - samtools
+  - r-base
+  - bioconductor-deseq2
