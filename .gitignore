@@ -8,4 +8,8 @@
 /output
 
 # References
-/references
+/references/databases
+/references/genomes
+/references/gffs
+/references/hisat2_indexes
+/references/plasmids
